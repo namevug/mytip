@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>My Tip</title>
+  </head>
+  <body>
+    <section class="logo"><img src="./assets/logo.svg" alt="Logotipo da aplicação." /></section>
+
+    <section class="app">
+      <div class="tip-calculator">
+        <label for="">Conta</label>
+        <input type="number" class="input bill-input" id="bill-input" />
+        <label for="">Selecione uma Gorjeta %</label>
+        <div class="tip">
+          <div class="tips tip-5">5%</div>
+          <div class="tips tip-10">10%</div>
+          <div class="tips active-tip tip-15">15%</div>
+          <div class="tips tip-20">20%</div>
+          <div class="tips tip-25">25%</div>
+          <div id="tip-custom">
+            <input class="tip-custom" type="number" placeholder="CUSTOM" />
+          </div>
+        </div>
+        <div class="number-people">
+          <label for="">Quantidade de Pessoas</label>
+          <label for="" class="error">Erro, número invalido!</label>
+        </div>
+        <input class="input people-input" type="number"/>
+      </div>
+
+      <div class="result">
+        <div class="tip-amount">
+          <div class="text">
+            <p>Valor da gorjeta</p>
+            <p class="person">/ pessoa</p>
+          </div>
+          <div class="amount" id="tip-amount">R$4.27</div>
+        </div>
+        <div class="total">
+          <div class="text">
+            <p>Total</p>
+            <p class="person">/ pessoa</p>
+          </div>
+          <div class="amount" id="total-amount">R$32.79</div>
+        </div>
+        <div class="reset-btn">RESET</div>
+      </div>
+    </section>
+    <script src="./src/main.js"></script>
+
+  </body>
+</html>
